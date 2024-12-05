@@ -43,9 +43,3 @@ INSERT INTO Instructors (FirstName, LastName, Email, HireDate, Department)
 VALUES
 ('Marie', 'Curie', 'marie.curie@example.com', '2015-09-01', 'Science'),
 ('William', 'Shakespeare', 'will.shake@example.com', '2010-03-15', 'Arts');
-
--- Assign instructors to courses
-INSERT INTO CourseInstructors (CourseID, InstructorID, AssignedDate)
-VALUES
-(1, 1, '2024-01-01'),
-(2, 2, '2024-01-01');
