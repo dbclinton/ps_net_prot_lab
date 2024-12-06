@@ -27,8 +27,6 @@ CREATE TABLE Enrollments (
     CourseID INT NOT NULL,
     EnrollmentDate DATE NOT NULL,
     Grade ENUM('A', 'B', 'C', 'D', 'F', 'Incomplete') DEFAULT 'Incomplete',
-    FOREIGN KEY (StudentID) REFERENCES Students(StudentID) ON DELETE CASCADE,
-    FOREIGN KEY (CourseID) REFERENCES Courses(CourseID) ON DELETE CASCADE,
     UNIQUE(StudentID, CourseID) -- Ensure no duplicate enrollments
 ) ENGINE=InnoDB;
 
